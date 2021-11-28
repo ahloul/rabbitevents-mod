@@ -1,13 +1,13 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue;
+namespace Ecavalier\Events\Tests\Queue;
 
 use Interop\Amqp\AmqpConsumer;
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\Impl\AmqpMessage;
 use Mockery as m;
-use Nuwber\Events\Queue\Manager;
-use Nuwber\Events\Queue\Message\Transport;
+use Ecavalier\Events\Queue\Manager;
+use Ecavalier\Events\Queue\Message\Transport;
 use PHPUnit\Framework\TestCase;
 
 class ManagerTest extends TestCase

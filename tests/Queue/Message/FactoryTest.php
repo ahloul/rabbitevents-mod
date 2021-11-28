@@ -1,10 +1,10 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Message;
+namespace Ecavalier\Events\Tests\Queue\Message;
 
 use Interop\Amqp\AmqpMessage;
-use Nuwber\Events\Queue\Message\Factory;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Message\Factory;
+use Ecavalier\Events\Tests\TestCase;
 
 class FactoryTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events;
+namespace Ecavalier\Events;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

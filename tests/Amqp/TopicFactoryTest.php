@@ -1,12 +1,12 @@
 <?php
 
-namespace Nuwber\Events\Tests\Amqp;
+namespace Ecavalier\Events\Tests\Amqp;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpTopic as ImplAmqpTopic;
-use Nuwber\Events\Amqp\TopicFactory;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Amqp\TopicFactory;
+use Ecavalier\Events\Tests\TestCase;
 
 class TopicFactoryTest extends TestCase
 {

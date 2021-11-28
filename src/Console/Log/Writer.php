@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Console\Log;
+namespace Ecavalier\Events\Console\Log;
 
-use Nuwber\Events\Queue\Events\JobProcessing;
-use Nuwber\Events\Queue\Events\JobProcessed;
-use Nuwber\Events\Queue\Events\JobExceptionOccurred;
-use Nuwber\Events\Queue\Events\JobFailed;
+use Ecavalier\Events\Queue\Events\JobProcessing;
+use Ecavalier\Events\Queue\Events\JobProcessed;
+use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
+use Ecavalier\Events\Queue\Events\JobFailed;
 
 abstract class Writer
 {

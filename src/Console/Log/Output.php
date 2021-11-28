@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Console\Log;
+namespace Ecavalier\Events\Console\Log;
 
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Carbon;
-use Nuwber\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Queue\Jobs\Job;
 
 class Output extends Writer
 {
@@ -42,7 +42,7 @@ class Output extends Writer
     /**
      * Format the status output for the queue worker.
      *
-     * @param  \Nuwber\Events\Queue\Jobs\Job $listener
+     * @param  \Ecavalier\Events\Queue\Jobs\Job $listener
      * @param  string $status
      * @param  string $type
      * @return void

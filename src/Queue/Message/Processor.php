@@ -1,19 +1,19 @@
 <?php
 
-namespace Nuwber\Events\Queue\Message;
+namespace Ecavalier\Events\Queue\Message;
 
 use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
 use Illuminate\Queue\MaxAttemptsExceededException;
 use Illuminate\Support\Carbon;
 use Interop\Amqp\AmqpMessage;
-use Nuwber\Events\Queue\Events\JobExceptionOccurred;
-use Nuwber\Events\Queue\Events\JobFailed;
-use Nuwber\Events\Queue\Events\JobProcessed;
-use Nuwber\Events\Queue\Events\JobProcessing;
-use Nuwber\Events\Queue\Exceptions\FailedException;
-use Nuwber\Events\Queue\Jobs\Factory;
-use Nuwber\Events\Queue\Jobs\Job;
-use Nuwber\Events\Queue\ProcessingOptions;
+use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
+use Ecavalier\Events\Queue\Events\JobFailed;
+use Ecavalier\Events\Queue\Events\JobProcessed;
+use Ecavalier\Events\Queue\Events\JobProcessing;
+use Ecavalier\Events\Queue\Exceptions\FailedException;
+use Ecavalier\Events\Queue\Jobs\Factory;
+use Ecavalier\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Queue\ProcessingOptions;
 use Throwable;
 
 class Processor

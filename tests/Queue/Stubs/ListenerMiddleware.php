@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Stubs;
+namespace Ecavalier\Events\Tests\Queue\Stubs;
 
 class ListenerMiddleware
 {

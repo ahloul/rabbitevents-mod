@@ -1,21 +1,21 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Message;
+namespace Ecavalier\Events\Tests\Queue\Message;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Events\Dispatcher as Events;
-use Nuwber\Events\Queue\Events\JobExceptionOccurred;
-use Nuwber\Events\Queue\Events\JobFailed;
-use Nuwber\Events\Queue\Events\JobProcessing;
-use Nuwber\Events\Queue\Events\JobProcessed;
+use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
+use Ecavalier\Events\Queue\Events\JobFailed;
+use Ecavalier\Events\Queue\Events\JobProcessing;
+use Ecavalier\Events\Queue\Events\JobProcessed;
 use Interop\Amqp\Impl\AmqpMessage;
-use Nuwber\Events\Queue\Exceptions\FailedException;
-use Nuwber\Events\Queue\Jobs\Factory;
-use Nuwber\Events\Queue\Jobs\Job;
-use Nuwber\Events\Queue\Message\Processor;
-use Nuwber\Events\Queue\ProcessingOptions;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Exceptions\FailedException;
+use Ecavalier\Events\Queue\Jobs\Factory;
+use Ecavalier\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Queue\Message\Processor;
+use Ecavalier\Events\Queue\ProcessingOptions;
+use Ecavalier\Events\Tests\TestCase;
 use Mockery as m;
 
 class ProcessorTest extends TestCase

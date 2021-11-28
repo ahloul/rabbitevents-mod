@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Amqp;
+namespace Ecavalier\Events\Amqp;
 
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpBind;
-use Nuwber\Events\Queue\Context;
+use Ecavalier\Events\Queue\Context;
 
 class BindFactory
 {

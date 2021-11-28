@@ -1,9 +1,9 @@
 <?php
 
-namespace Nuwber\Events\Console\Log;
+namespace Ecavalier\Events\Console\Log;
 
 use Illuminate\Contracts\Foundation\Application;
-use Nuwber\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Queue\Jobs\Job;
 
 class General extends Writer
 {

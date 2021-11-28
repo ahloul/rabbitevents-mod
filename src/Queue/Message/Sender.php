@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Queue\Message;
+namespace Ecavalier\Events\Queue\Message;
 
 use Illuminate\Support\InteractsWithTime;
 use Interop\Queue\Destination;

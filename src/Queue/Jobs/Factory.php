@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Queue\Jobs;
+namespace Ecavalier\Events\Queue\Jobs;
 
 use Generator;
 use Interop\Amqp\AmqpMessage;
-use Nuwber\Events\Facades\RabbitEvents;
-use Nuwber\Events\Queue\Manager;
+use Ecavalier\Events\Facades\RabbitEvents;
+use Ecavalier\Events\Queue\Manager;
 use Illuminate\Container\Container;
 
 class Factory

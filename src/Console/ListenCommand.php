@@ -1,22 +1,22 @@
 <?php
 
-namespace Nuwber\Events\Console;
+namespace Ecavalier\Events\Console;
 
 use Illuminate\Console\Command;
 use Interop\Amqp\AmqpQueue;
-use Nuwber\Events\Amqp\BindFactory;
-use Nuwber\Events\Amqp\QueueFactory;
-use Nuwber\Events\Console\Log;
-use Nuwber\Events\Queue\Context;
-use Nuwber\Events\Queue\Events\JobExceptionOccurred;
-use Nuwber\Events\Queue\Events\JobFailed;
-use Nuwber\Events\Queue\Events\JobProcessed;
-use Nuwber\Events\Queue\Events\JobProcessing;
-use Nuwber\Events\Queue\Jobs\Factory;
-use Nuwber\Events\Queue\Message\Processor;
-use Nuwber\Events\Queue\ProcessingOptions;
-use Nuwber\Events\Queue\Manager;
-use Nuwber\Events\Queue\Worker;
+use Ecavalier\Events\Amqp\BindFactory;
+use Ecavalier\Events\Amqp\QueueFactory;
+use Ecavalier\Events\Console\Log;
+use Ecavalier\Events\Queue\Context;
+use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
+use Ecavalier\Events\Queue\Events\JobFailed;
+use Ecavalier\Events\Queue\Events\JobProcessed;
+use Ecavalier\Events\Queue\Events\JobProcessing;
+use Ecavalier\Events\Queue\Jobs\Factory;
+use Ecavalier\Events\Queue\Message\Processor;
+use Ecavalier\Events\Queue\ProcessingOptions;
+use Ecavalier\Events\Queue\Manager;
+use Ecavalier\Events\Queue\Worker;
 
 class ListenCommand extends Command
 {

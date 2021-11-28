@@ -1,17 +1,17 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue;
+namespace Ecavalier\Events\Tests\Queue;
 
 use Illuminate\Container\Container;
-use Nuwber\Events\Queue\Jobs\Job;
-use Nuwber\Events\Dispatcher;
-use Nuwber\Events\Queue\Manager;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Dispatcher;
+use Ecavalier\Events\Queue\Manager;
+use Ecavalier\Events\Tests\TestCase;
 use Interop\Amqp\Impl\AmqpMessage;
-use Nuwber\Events\Tests\Queue\Stubs\ListenerStubForMiddleware;
-use Nuwber\Events\Tests\Queue\Stubs\ListenerWithMixOfMiddleware;
-use Nuwber\Events\Tests\Queue\Stubs\ListenerWithMethodMiddleware;
-use Nuwber\Events\Tests\Queue\Stubs\ListenerWithAttributeMiddleware;
+use Ecavalier\Events\Tests\Queue\Stubs\ListenerStubForMiddleware;
+use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithMixOfMiddleware;
+use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithMethodMiddleware;
+use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithAttributeMiddleware;
 
 class MiddlewareTest extends TestCase
 {

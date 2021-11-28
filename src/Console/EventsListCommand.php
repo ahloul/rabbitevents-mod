@@ -1,9 +1,9 @@
 <?php
 
-namespace Nuwber\Events\Console;
+namespace Ecavalier\Events\Console;
 
 use Illuminate\Console\Command;
-use Nuwber\Events\Facades\RabbitEvents;
+use Ecavalier\Events\Facades\RabbitEvents;
 
 class EventsListCommand extends Command
 {

@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Arr;
 use Illuminate\Container\Container;
-use Nuwber\Events\Event\Publisher;
-use Nuwber\Events\Event\ShouldPublish;
+use Ecavalier\Events\Event\Publisher;
+use Ecavalier\Events\Event\ShouldPublish;
 
 if (!function_exists('publish')) {
 

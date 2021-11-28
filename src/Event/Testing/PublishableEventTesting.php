@@ -1,10 +1,10 @@
 <?php
 
-namespace Nuwber\Events\Event\Testing;
+namespace Ecavalier\Events\Event\Testing;
 
 use Illuminate\Container\Container;
-use Nuwber\Events\Event\Publisher;
-use Nuwber\Events\Event\ShouldPublish;
+use Ecavalier\Events\Event\Publisher;
+use Ecavalier\Events\Event\ShouldPublish;
 
 trait PublishableEventTesting
 {

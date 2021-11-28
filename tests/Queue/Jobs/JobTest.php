@@ -1,15 +1,15 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Jobs;
+namespace Ecavalier\Events\Tests\Queue\Jobs;
 
 use Enqueue\AmqpLib\AmqpConsumer;
 use Illuminate\Container\Container;
 use Interop\Amqp\AmqpMessage;
 use Mockery as m;
-use Nuwber\Events\Queue\Jobs\Job;
-use Nuwber\Events\Queue\Manager;
-use Nuwber\Events\Queue\Message\Transport;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Jobs\Job;
+use Ecavalier\Events\Queue\Manager;
+use Ecavalier\Events\Queue\Message\Transport;
+use Ecavalier\Events\Tests\TestCase;
 
 class JobTest extends TestCase
 {

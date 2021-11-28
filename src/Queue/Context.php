@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Queue;
+namespace Ecavalier\Events\Queue;
 
 use Interop\Queue\Topic;
 use Interop\Amqp\AmqpContext;
-use Nuwber\Events\Queue\Message\Sender;
-use Nuwber\Events\Queue\Message\Transport;
+use Ecavalier\Events\Queue\Message\Sender;
+use Ecavalier\Events\Queue\Message\Transport;
 
 /**
  * @mixin \Enqueue\AmqpLib\AmqpContext

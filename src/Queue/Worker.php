@@ -1,8 +1,8 @@
 <?php
 
-namespace Nuwber\Events\Queue;
+namespace Ecavalier\Events\Queue;
 
-use Nuwber\Events\Queue\Message\Processor;
+use Ecavalier\Events\Queue\Message\Processor;
 use PhpAmqpLib\Exception\AMQPRuntimeException;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Throwable;

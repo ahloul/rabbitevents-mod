@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Queue\Events;
+namespace Ecavalier\Events\Queue\Events;
 
 use Illuminate\Queue\Jobs\Job;
 

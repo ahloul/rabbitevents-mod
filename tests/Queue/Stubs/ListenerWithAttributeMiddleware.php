@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Stubs;
+namespace Ecavalier\Events\Tests\Queue\Stubs;
 
 class ListenerWithAttributeMiddleware
 {
     public $middleware = [
-        'Nuwber\Events\Tests\Queue\Stubs\ListenerMiddleware@action',
+        'Ecavalier\Events\Tests\Queue\Stubs\ListenerMiddleware@action',
         ListenerMiddleware::class
     ];
 

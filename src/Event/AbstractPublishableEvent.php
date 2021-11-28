@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Event;
+namespace Ecavalier\Events\Event;
 
 abstract class AbstractPublishableEvent implements ShouldPublish
 {

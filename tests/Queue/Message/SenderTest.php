@@ -1,14 +1,14 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue\Message;
+namespace Ecavalier\Events\Tests\Queue\Message;
 
 use Interop\Amqp\Impl\AmqpMessage;
 use Interop\Queue\Destination;
 use Interop\Queue\Exception\DeliveryDelayNotSupportedException;
 use Interop\Queue\Producer;
 use Mockery as m;
-use Nuwber\Events\Queue\Message\Sender;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Message\Sender;
+use Ecavalier\Events\Tests\TestCase;
 
 class SenderTest extends TestCase
 {

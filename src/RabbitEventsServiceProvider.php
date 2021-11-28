@@ -1,17 +1,17 @@
 <?php
 
-namespace Nuwber\Events;
+namespace Ecavalier\Events;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
-use Nuwber\Events\Amqp\Connection;
-use Nuwber\Events\Amqp\TopicFactory;
-use Nuwber\Events\Console\EventsListCommand;
-use Nuwber\Events\Console\InstallCommand;
-use Nuwber\Events\Console\ListenCommand;
-use Nuwber\Events\Console\ObserverMakeCommand;
-use Nuwber\Events\Facades\RabbitEvents;
-use Nuwber\Events\Queue\Context;
+use Ecavalier\Events\Amqp\Connection;
+use Ecavalier\Events\Amqp\TopicFactory;
+use Ecavalier\Events\Console\EventsListCommand;
+use Ecavalier\Events\Console\InstallCommand;
+use Ecavalier\Events\Console\ListenCommand;
+use Ecavalier\Events\Console\ObserverMakeCommand;
+use Ecavalier\Events\Facades\RabbitEvents;
+use Ecavalier\Events\Queue\Context;
 
 class RabbitEventsServiceProvider extends ServiceProvider
 {

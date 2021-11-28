@@ -1,7 +1,7 @@
 <?php
 namespace app\Providers;
 
-class RabbitEventsServiceProvider extends \Nuwber\Events\RabbitEventsServiceProvider
+class RabbitEventsServiceProvider extends \Ecavalier\Events\RabbitEventsServiceProvider
 {
     protected $listen = [
         'some.event' => [

@@ -1,12 +1,12 @@
 <?php
 
-namespace Nuwber\Events\Event;
+namespace Ecavalier\Events\Event;
 
 use Interop\Amqp\Impl\AmqpMessage;
-use Nuwber\Events\Queue\Context;
+use Ecavalier\Events\Queue\Context;
 use JsonException;
-use Nuwber\Events\Queue\Message\Factory as MessageFactory;
-use Nuwber\Events\Queue\Message\Transport;
+use Ecavalier\Events\Queue\Message\Factory as MessageFactory;
+use Ecavalier\Events\Queue\Message\Transport;
 
 class Publisher
 {

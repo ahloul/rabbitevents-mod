@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Amqp;
+namespace Ecavalier\Events\Amqp;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Interop\Queue\Topic;

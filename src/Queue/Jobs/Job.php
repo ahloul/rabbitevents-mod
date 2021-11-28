@@ -1,10 +1,10 @@
 <?php
 
-namespace Nuwber\Events\Queue\Jobs;
+namespace Ecavalier\Events\Queue\Jobs;
 
 use Illuminate\Support\Arr;
 use Interop\Amqp\AmqpMessage;
-use Nuwber\Events\Queue\Manager;
+use Ecavalier\Events\Queue\Manager;
 use Illuminate\Container\Container;
 
 class Job extends \Illuminate\Queue\Jobs\Job implements \Illuminate\Contracts\Queue\Job

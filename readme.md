@@ -1,12 +1,12 @@
 # Events publishing for Laravel by using RabbitMQ
 
-[![Tests Status](https://github.com/nuwber/rabbitevents/workflows/Unit%20tests/badge.svg?branch=master)](https://github.com/nuwber/rabbitevents/actions?query=branch%3Amaster+workflow%3A%22Unit+tests%22)
-[![codecov](https://codecov.io/gh/nuwber/rabbitevents/branch/master/graph/badge.svg?token=8E9CY6866R)](https://codecov.io/gh/nuwber/rabbitevents)
-[![Total Downloads](https://img.shields.io/packagist/dt/nuwber/rabbitevents)](https://packagist.org/packages/nuwber/rabbitevents)
-[![Latest Version](https://img.shields.io/packagist/v/nuwber/rabbitevents)](https://packagist.org/packages/nuwber/rabbitevents)
-[![License](https://img.shields.io/packagist/l/nuwber/rabbitevents)](https://packagist.org/packages/nuwber/rabbitevents)
+[![Tests Status](https://github.com/Ecavalier/rabbitevents/workflows/Unit%20tests/badge.svg?branch=master)](https://github.com/Ecavalier/rabbitevents/actions?query=branch%3Amaster+workflow%3A%22Unit+tests%22)
+[![codecov](https://codecov.io/gh/Ecavalier/rabbitevents/branch/master/graph/badge.svg?token=8E9CY6866R)](https://codecov.io/gh/Ecavalier/rabbitevents)
+[![Total Downloads](https://img.shields.io/packagist/dt/Ecavalier/rabbitevents)](https://packagist.org/packages/Ecavalier/rabbitevents)
+[![Latest Version](https://img.shields.io/packagist/v/Ecavalier/rabbitevents)](https://packagist.org/packages/Ecavalier/rabbitevents)
+[![License](https://img.shields.io/packagist/l/Ecavalier/rabbitevents)](https://packagist.org/packages/Ecavalier/rabbitevents)
 
-Nuwber's events provides a simple observer implementation, allowing you to listen for various events that occur in your current and another applications. For example if you need to react to some event published from another API. 
+Ecavalier's events provides a simple observer implementation, allowing you to listen for various events that occur in your current and another applications. For example if you need to react to some event published from another API. 
 
 Do not confuse this package with Laravel's broadcast. This package was made to communicate a backend to backend.
  
@@ -43,7 +43,7 @@ All RabbitMQ calls are done by using [Laravel queue package](https://github.com/
 You may use Composer to install RabbitEvents into your Laravel project:
 
 ```bash
-$ composer require nuwber/rabbitevents
+$ composer require Ecavalier/rabbitevents
 ```
 
 After installing RabbitEvents, publish its config and a service provider using the `rabbitevents:install` Artisan command:
@@ -110,7 +110,7 @@ publish($someEvent->publishEventKey(), $someEvent->toPublish());
 ## Defining Events <a name="defining-events">
 
 If you want to make your event class publishable you should implement interface `ShouldPublish`. 
-Example of such class you could see [here](https://github.com/nuwber/rabbitevents/issues/29#issuecomment-531859944).
+Example of such class you could see [here](https://github.com/Ecavalier/rabbitevents/issues/29#issuecomment-531859944).
 If you'll try to publish an event without implementation, 
 the exception `InvalidArgumentException('Event must be a string or implement "ShouldPublish" interface')` will be thrown.
 
@@ -124,7 +124,7 @@ Examples 1, 3 and 4 illustrates how to use them.
 The [rabbitevents:listen](#command-listen) command sets number of tries to handle a Job to `1` by default. 
 This means that there will be 2 attempts (first attempt and 1 retry) to handle  your event with delay of `sleep` option (default is 5 seconds). 
 `--tries=0` means that Rabbitevents will attempt to handle an event forever.
-If for some reason event handling shouldn't be retried, throw `\Nuwber\Events\Exception\FailedException` from a Listener. It will mark an event Job as `failed` without new attempts to handle.
+If for some reason event handling shouldn't be retried, throw `\Ecavalier\Events\Exception\FailedException` from a Listener. It will mark an event Job as `failed` without new attempts to handle.
 
 More examples [here](/examples)
 
@@ -470,9 +470,9 @@ Simply use `PublishableEventTesting` trait that provides assertion methods in cl
 
 namespace App\BroadcastEvents;
 
-use Nuwber\Events\Event\Publishable;
-use Nuwber\Events\Event\ShouldPublish;
-use Nuwber\Events\Event\Testing\PublishableEventTesting;
+use Ecavalier\Events\Event\Publishable;
+use Ecavalier\Events\Event\ShouldPublish;
+use Ecavalier\Events\Event\Testing\PublishableEventTesting;
 
 class Event implements ShouldPublish
 {

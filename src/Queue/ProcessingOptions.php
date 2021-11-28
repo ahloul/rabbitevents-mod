@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Queue;
+namespace Ecavalier\Events\Queue;
 
 class ProcessingOptions
 {

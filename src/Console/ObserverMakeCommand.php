@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Console;
+namespace Ecavalier\Events\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;

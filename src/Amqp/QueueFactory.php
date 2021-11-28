@@ -1,10 +1,10 @@
 <?php
 
-namespace Nuwber\Events\Amqp;
+namespace Ecavalier\Events\Amqp;
 
 use Interop\Amqp\AmqpQueue;
 use Interop\Queue\Exception\Exception;
-use Nuwber\Events\Queue\Context;
+use Ecavalier\Events\Queue\Context;
 
 class QueueFactory
 {

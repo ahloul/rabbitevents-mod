@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-class RabbitEventsServiceProvider extends \Nuwber\Events\RabbitEventsServiceProvider
+class RabbitEventsServiceProvider extends \Ecavalier\Events\RabbitEventsServiceProvider
 {
 
     /**

@@ -1,5 +1,5 @@
 {
-  "name": "nuwber/rabbitevents",
+  "name": "Ecavalier/rabbitevents",
   "description": "Laravel back-to-back broadcasting events. It uses RabbitMQ as the transport.",
   "keywords": [
     "queue",
@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Nuwber\\Events\\": "src/"
+      "Ecavalier\\Events\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -42,13 +42,13 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Nuwber\\Events\\RabbitEventsServiceProvider"
+        "Ecavalier\\Events\\RabbitEventsServiceProvider"
       ]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Nuwber\\Events\\Tests\\": "tests/"
+      "Ecavalier\\Events\\Tests\\": "tests/"
     }
   }
 }

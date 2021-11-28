@@ -1,16 +1,16 @@
 <?php
 
-namespace Nuwber\Events\Tests\Amqp;
+namespace Ecavalier\Events\Tests\Amqp;
 
 use Interop\Amqp\AmqpContext;
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpBind;
 use Interop\Amqp\Impl\AmqpQueue as ImplAmqpQueue;
-use Nuwber\Events\Amqp\BindFactory;
-use Nuwber\Events\Amqp\QueueFactory;
-use Nuwber\Events\Queue\Context;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Amqp\BindFactory;
+use Ecavalier\Events\Amqp\QueueFactory;
+use Ecavalier\Events\Queue\Context;
+use Ecavalier\Events\Tests\TestCase;
 
 class QueueFactoryTest extends TestCase
 {

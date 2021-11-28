@@ -1,17 +1,17 @@
 <?php
 
-namespace Nuwber\Events\Tests\Event;
+namespace Ecavalier\Events\Tests\Event;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Illuminate\Contracts\Support\Arrayable;
 use Interop\Queue\Topic;
 use Mockery as m;
-use Nuwber\Events\Event\Publishable;
-use Nuwber\Events\Event\Publisher;
-use Nuwber\Events\Event\ShouldPublish;
-use Nuwber\Events\Queue\Message\Sender;
-use Nuwber\Events\Queue\Context;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Event\Publishable;
+use Ecavalier\Events\Event\Publisher;
+use Ecavalier\Events\Event\ShouldPublish;
+use Ecavalier\Events\Queue\Message\Sender;
+use Ecavalier\Events\Queue\Context;
+use Ecavalier\Events\Tests\TestCase;
 
 class PublisherTest extends TestCase
 {

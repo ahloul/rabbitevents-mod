@@ -1,14 +1,14 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue;
+namespace Ecavalier\Events\Tests\Queue;
 
 use Interop\Amqp\AmqpContext;
 use Interop\Queue\Producer;
 use Interop\Queue\Topic;
 use Mockery as m;
-use Nuwber\Events\Queue\Context;
-use Nuwber\Events\Queue\Message\Transport;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Context;
+use Ecavalier\Events\Queue\Message\Transport;
+use Ecavalier\Events\Tests\TestCase;
 
 class ContextTest extends TestCase
 {

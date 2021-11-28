@@ -1,12 +1,12 @@
 <?php
 
-namespace Nuwber\Events\Tests\Amqp;
+namespace Ecavalier\Events\Tests\Amqp;
 
 use Enqueue\AmqpTools\DelayStrategy;
 use Interop\Amqp\AmqpConnectionFactory;
-use Nuwber\Events\Amqp\Connection;
-use Nuwber\Events\Queue\Context;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Amqp\Connection;
+use Ecavalier\Events\Queue\Context;
+use Ecavalier\Events\Tests\TestCase;
 
 class ConnectionTest extends TestCase
 {

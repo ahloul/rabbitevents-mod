@@ -1,6 +1,6 @@
 <?php
 
-namespace Nuwber\Events\Queue\Exceptions;
+namespace Ecavalier\Events\Queue\Exceptions;
 
 class FailedException extends \RuntimeException
 {

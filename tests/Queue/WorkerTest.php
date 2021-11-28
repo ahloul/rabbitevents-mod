@@ -1,14 +1,14 @@
 <?php
 
-namespace Nuwber\Events\Tests\Queue;
+namespace Ecavalier\Events\Tests\Queue;
 
 use http\Exception\RuntimeException;
 use Interop\Amqp\Impl\AmqpMessage;
-use Nuwber\Events\Queue\Manager;
-use Nuwber\Events\Queue\Message\Processor;
-use Nuwber\Events\Queue\ProcessingOptions;
-use Nuwber\Events\Queue\Worker;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Queue\Manager;
+use Ecavalier\Events\Queue\Message\Processor;
+use Ecavalier\Events\Queue\ProcessingOptions;
+use Ecavalier\Events\Queue\Worker;
+use Ecavalier\Events\Tests\TestCase;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Mockery as m;

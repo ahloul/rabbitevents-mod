@@ -1,14 +1,14 @@
 <?php
 
-namespace Nuwber\Events\Tests\Event;
+namespace Ecavalier\Events\Tests\Event;
 
 use Illuminate\Container\Container;
 use Mockery\Exception\InvalidCountException;
-use Nuwber\Events\Event\Publishable;
-use Nuwber\Events\Event\Testing\PublishableEventTesting;
-use Nuwber\Events\Event\Publisher;
-use Nuwber\Events\Event\ShouldPublish;
-use Nuwber\Events\Tests\TestCase;
+use Ecavalier\Events\Event\Publishable;
+use Ecavalier\Events\Event\Testing\PublishableEventTesting;
+use Ecavalier\Events\Event\Publisher;
+use Ecavalier\Events\Event\ShouldPublish;
+use Ecavalier\Events\Tests\TestCase;
 
 class PublishableTest extends TestCase
 {
@@ -106,7 +106,7 @@ class PublishableTest extends TestCase
 class Listener implements ShouldPublish
 {
     use Publishable;
-    use \Nuwber\Events\Event\Testing\PublishableEventTesting;
+    use \Ecavalier\Events\Event\Testing\PublishableEventTesting;
 
     private $payload = [];
 

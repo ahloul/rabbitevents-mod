@@ -1,10 +1,10 @@
 <?php
 
-namespace Nuwber\Events\Tests;
+namespace Ecavalier\Events\Tests;
 
 use Illuminate\Support\Arr;
-use Nuwber\Events\Dispatcher;
-use Nuwber\Events\Tests\Queue\Stubs\ListenerStub;
+use Ecavalier\Events\Dispatcher;
+use Ecavalier\Events\Tests\Queue\Stubs\ListenerStub;
 
 class DispatcherTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Nuwber\Events\Facades;
+namespace Ecavalier\Events\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Nuwber\Events\Dispatcher;
+use Ecavalier\Events\Dispatcher;
 
 /**
  * @see Dispatcher

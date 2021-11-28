@@ -1,11 +1,11 @@
 <?php
 
-namespace Nuwber\Events\Queue;
+namespace Ecavalier\Events\Queue;
 
 use Illuminate\Support\InteractsWithTime;
 use Interop\Amqp\AmqpConsumer;
 use Interop\Amqp\AmqpMessage;
-use Nuwber\Events\Queue\Message\Transport;
+use Ecavalier\Events\Queue\Message\Transport;
 
 class Manager
 {
