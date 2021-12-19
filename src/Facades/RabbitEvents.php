@@ -1,9 +1,9 @@
 <?php
 
-namespace Ecavalier\Events\Facades;
+namespace RabbiteventsMod\Events\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use Ecavalier\Events\Dispatcher;
+use RabbiteventsMod\Events\Dispatcher;
 
 /**
  * @see Dispatcher

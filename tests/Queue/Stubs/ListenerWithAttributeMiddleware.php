@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Stubs;
+namespace RabbiteventsMod\Events\Tests\Queue\Stubs;
 
 class ListenerWithAttributeMiddleware
 {
     public $middleware = [
-        'Ecavalier\Events\Tests\Queue\Stubs\ListenerMiddleware@action',
+        'RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerMiddleware@action',
         ListenerMiddleware::class
     ];
 

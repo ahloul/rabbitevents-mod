@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events;
+namespace RabbiteventsMod\Events;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

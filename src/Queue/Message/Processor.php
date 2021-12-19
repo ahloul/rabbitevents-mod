@@ -1,19 +1,19 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Message;
+namespace RabbiteventsMod\Events\Queue\Message;
 
 use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
 use Illuminate\Queue\MaxAttemptsExceededException;
 use Illuminate\Support\Carbon;
 use Interop\Amqp\AmqpMessage;
-use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
-use Ecavalier\Events\Queue\Events\JobFailed;
-use Ecavalier\Events\Queue\Events\JobProcessed;
-use Ecavalier\Events\Queue\Events\JobProcessing;
-use Ecavalier\Events\Queue\Exceptions\FailedException;
-use Ecavalier\Events\Queue\Jobs\Factory;
-use Ecavalier\Events\Queue\Jobs\Job;
-use Ecavalier\Events\Queue\ProcessingOptions;
+use RabbiteventsMod\Events\Queue\Events\JobExceptionOccurred;
+use RabbiteventsMod\Events\Queue\Events\JobFailed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessing;
+use RabbiteventsMod\Events\Queue\Exceptions\FailedException;
+use RabbiteventsMod\Events\Queue\Jobs\Factory;
+use RabbiteventsMod\Events\Queue\Jobs\Job;
+use RabbiteventsMod\Events\Queue\ProcessingOptions;
 use Throwable;
 
 class Processor

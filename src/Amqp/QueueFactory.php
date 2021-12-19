@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecavalier\Events\Amqp;
+namespace RabbiteventsMod\Events\Amqp;
 
 use Interop\Amqp\AmqpQueue;
 use Interop\Queue\Exception\Exception;
-use Ecavalier\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Context;
 
 class QueueFactory
 {

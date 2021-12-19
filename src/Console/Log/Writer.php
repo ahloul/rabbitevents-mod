@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Console\Log;
+namespace RabbiteventsMod\Events\Console\Log;
 
-use Ecavalier\Events\Queue\Events\JobProcessing;
-use Ecavalier\Events\Queue\Events\JobProcessed;
-use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
-use Ecavalier\Events\Queue\Events\JobFailed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessing;
+use RabbiteventsMod\Events\Queue\Events\JobProcessed;
+use RabbiteventsMod\Events\Queue\Events\JobExceptionOccurred;
+use RabbiteventsMod\Events\Queue\Events\JobFailed;
 
 abstract class Writer
 {

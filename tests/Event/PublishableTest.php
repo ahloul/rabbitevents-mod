@@ -1,14 +1,14 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Event;
+namespace RabbiteventsMod\Events\Tests\Event;
 
 use Illuminate\Container\Container;
 use Mockery\Exception\InvalidCountException;
-use Ecavalier\Events\Event\Publishable;
-use Ecavalier\Events\Event\Testing\PublishableEventTesting;
-use Ecavalier\Events\Event\Publisher;
-use Ecavalier\Events\Event\ShouldPublish;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Event\Publishable;
+use RabbiteventsMod\Events\Event\Testing\PublishableEventTesting;
+use RabbiteventsMod\Events\Event\Publisher;
+use RabbiteventsMod\Events\Event\ShouldPublish;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class PublishableTest extends TestCase
 {
@@ -106,7 +106,7 @@ class PublishableTest extends TestCase
 class Listener implements ShouldPublish
 {
     use Publishable;
-    use \Ecavalier\Events\Event\Testing\PublishableEventTesting;
+    use \RabbiteventsMod\Events\Event\Testing\PublishableEventTesting;
 
     private $payload = [];
 

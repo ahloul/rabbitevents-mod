@@ -1,8 +1,8 @@
 <?php
 
-namespace Ecavalier\Events\Queue;
+namespace RabbiteventsMod\Events\Queue;
 
-use Ecavalier\Events\Queue\Message\Processor;
+use RabbiteventsMod\Events\Queue\Message\Processor;
 use PhpAmqpLib\Exception\AMQPRuntimeException;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Throwable;

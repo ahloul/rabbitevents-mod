@@ -1,14 +1,14 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue;
+namespace RabbiteventsMod\Events\Tests\Queue;
 
 use http\Exception\RuntimeException;
 use Interop\Amqp\Impl\AmqpMessage;
-use Ecavalier\Events\Queue\Manager;
-use Ecavalier\Events\Queue\Message\Processor;
-use Ecavalier\Events\Queue\ProcessingOptions;
-use Ecavalier\Events\Queue\Worker;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Manager;
+use RabbiteventsMod\Events\Queue\Message\Processor;
+use RabbiteventsMod\Events\Queue\ProcessingOptions;
+use RabbiteventsMod\Events\Queue\Worker;
+use RabbiteventsMod\Events\Tests\TestCase;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Mockery as m;

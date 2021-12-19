@@ -1,9 +1,9 @@
 <?php
 
-namespace Ecavalier\Events\Console;
+namespace RabbiteventsMod\Events\Console;
 
 use Illuminate\Console\Command;
-use Ecavalier\Events\Facades\RabbitEvents;
+use RabbiteventsMod\Events\Facades\RabbitEvents;
 
 class EventsListCommand extends Command
 {
@@ -20,9 +20,10 @@ class EventsListCommand extends Command
      * @var string
      */
     protected $description = 'List of registered broadcast events';
-    
+
     public function handle(): void
     {
+
         $events = RabbitEvents::getEvents();
 
         if (count($events) === 0) {

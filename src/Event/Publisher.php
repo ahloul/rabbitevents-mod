@@ -1,12 +1,13 @@
 <?php
 
-namespace Ecavalier\Events\Event;
+namespace RabbiteventsMod\Events\Event;
 
+use Illuminate\Support\Facades\Config;
 use Interop\Amqp\Impl\AmqpMessage;
-use Ecavalier\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Context;
 use JsonException;
-use Ecavalier\Events\Queue\Message\Factory as MessageFactory;
-use Ecavalier\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Queue\Message\Factory as MessageFactory;
+use RabbiteventsMod\Events\Queue\Message\Transport;
 
 class Publisher
 {
@@ -29,8 +30,12 @@ class Publisher
      */
     public function publish(ShouldPublish $event): void
     {
+        $serviceName="Laravel";
+        if(function_exists('config')){
+            $serviceName=config('rabbitevents.connections.rabbitmq.rabbitevents_service_name');
+        }
         $this->transport()->send(
-            MessageFactory::make($event->publishEventKey(), $event->toPublish())
+            MessageFactory::make( $serviceName.":".$event->publishEventKey(), $event->toPublish())
         );
     }
 

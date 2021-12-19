@@ -1,5 +1,5 @@
 {
-  "name": "Ecavalier/rabbitevents",
+  "name": "ahloul/rabbitevents-mod",
   "description": "Laravel back-to-back broadcasting events. It uses RabbitMQ as the transport.",
   "keywords": [
     "queue",
@@ -25,7 +25,8 @@
     "illuminate/events": "^7.0 | ^8.0",
     "illuminate/queue": "^7.0 | ^8.0",
     "illuminate/support": "^7.0 | ^8.0",
-    "enqueue/amqp-lib": "^0.10"
+    "enqueue/amqp-lib": "^0.10",
+    "phpoption/phpoption": "^1.8"
   },
   "require-dev": {
     "mockery/mockery": "^1.4",
@@ -33,7 +34,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ecavalier\\Events\\": "src/"
+      "RabbiteventsMod\\Events\\": "src/"
     },
     "files": [
       "src/helpers.php"
@@ -42,13 +43,13 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Ecavalier\\Events\\RabbitEventsServiceProvider"
+        "RabbiteventsMod\\Events\\RabbitEventsServiceProvider"
       ]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ecavalier\\Events\\Tests\\": "tests/"
+      "RabbiteventsMod\\Events\\Tests\\": "tests/"
     }
   }
 }

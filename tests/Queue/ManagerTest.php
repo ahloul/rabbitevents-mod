@@ -1,13 +1,13 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue;
+namespace RabbiteventsMod\Events\Tests\Queue;
 
 use Interop\Amqp\AmqpConsumer;
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\Impl\AmqpMessage;
 use Mockery as m;
-use Ecavalier\Events\Queue\Manager;
-use Ecavalier\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Queue\Manager;
+use RabbiteventsMod\Events\Queue\Message\Transport;
 use PHPUnit\Framework\TestCase;
 
 class ManagerTest extends TestCase

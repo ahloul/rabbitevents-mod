@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Events;
+namespace RabbiteventsMod\Events\Queue\Events;
 
 use Illuminate\Queue\Jobs\Job;
 

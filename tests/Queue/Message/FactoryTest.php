@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Message;
+namespace RabbiteventsMod\Events\Tests\Queue\Message;
 
 use Interop\Amqp\AmqpMessage;
-use Ecavalier\Events\Queue\Message\Factory;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Message\Factory;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class FactoryTest extends TestCase
 {

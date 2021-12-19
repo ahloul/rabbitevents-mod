@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Message;
+namespace RabbiteventsMod\Events\Queue\Message;
 
 use Interop\Amqp\Impl\AmqpMessage;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Amqp;
+namespace RabbiteventsMod\Events\Tests\Amqp;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpTopic as ImplAmqpTopic;
-use Ecavalier\Events\Amqp\TopicFactory;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Amqp\TopicFactory;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class TopicFactoryTest extends TestCase
 {

@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Arr;
 use Illuminate\Container\Container;
-use Ecavalier\Events\Event\Publisher;
-use Ecavalier\Events\Event\ShouldPublish;
+use RabbiteventsMod\Events\Event\Publisher;
+use RabbiteventsMod\Events\Event\ShouldPublish;
 
 if (!function_exists('publish')) {
 
@@ -22,7 +22,11 @@ if (!function_exists('publish')) {
 
                 public function publishEventKey(): string
                 {
-                    return $this->event;
+                    $serviceName="Laravel";
+                    if(function_exists('config')){
+                        $serviceName=config('rabbitevents.connections.rabbitmq.rabbitevents_service_name');
+                    }
+                    return $serviceName.":".$this->event;
                 }
 
                 public function toPublish(): array

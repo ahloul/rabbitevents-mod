@@ -1,7 +1,7 @@
 <?php
 namespace app\RabbitEvents;
 
-use Ecavalier\Events\Event\AbstractPublishableEvent;
+use RabbiteventsMod\Events\Event\AbstractPublishableEvent;
 
 class UserCreated extends AbstractPublishableEvent
 {

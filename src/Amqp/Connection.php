@@ -1,13 +1,13 @@
 <?php
 
-namespace Ecavalier\Events\Amqp;
+namespace RabbiteventsMod\Events\Amqp;
 
 use Enqueue\AmqpLib\AmqpConnectionFactory;
 use Enqueue\AmqpLib\AmqpContext;
 use Enqueue\AmqpTools\DelayStrategy;
 use Enqueue\AmqpTools\RabbitMqDlxDelayStrategy;
 use Illuminate\Support\Collection;
-use Ecavalier\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Context;
 use Interop\Queue\Topic;
 
 class Connection

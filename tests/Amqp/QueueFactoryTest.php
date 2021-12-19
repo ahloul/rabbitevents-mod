@@ -1,16 +1,16 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Amqp;
+namespace RabbiteventsMod\Events\Tests\Amqp;
 
 use Interop\Amqp\AmqpContext;
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpBind;
 use Interop\Amqp\Impl\AmqpQueue as ImplAmqpQueue;
-use Ecavalier\Events\Amqp\BindFactory;
-use Ecavalier\Events\Amqp\QueueFactory;
-use Ecavalier\Events\Queue\Context;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Amqp\BindFactory;
+use RabbiteventsMod\Events\Amqp\QueueFactory;
+use RabbiteventsMod\Events\Queue\Context;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class QueueFactoryTest extends TestCase
 {

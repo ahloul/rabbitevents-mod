@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Message;
+namespace RabbiteventsMod\Events\Queue\Message;
 
 use Illuminate\Support\InteractsWithTime;
 use Interop\Queue\Destination;

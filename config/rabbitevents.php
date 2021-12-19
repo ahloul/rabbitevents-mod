@@ -24,7 +24,8 @@ return [
             'port' => env('RABBITEVENTS_PORT', 5672),
             'user' => env('RABBITEVENTS_USER', 'guest'),
             'pass' => env('RABBITEVENTS_PASSWORD', 'guest'),
-            'vhost' => env('RABBITEVENTS_VHOST', 'events'),
+            'vhost' => env('RABBITEVENTS_VHOST', '/'),
+            'rabbitevents_service_name' => env('RABBITMQ_SERVICE_NAME', 'Laravel'),
             'logging' => [
                 'enabled' => env('RABBITEVENTS_LOG_ENABLED', false),
                 'level' => env('RABBITEVENTS_LOG_LEVEL', 'info'),

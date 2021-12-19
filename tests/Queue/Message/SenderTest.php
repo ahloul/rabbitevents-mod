@@ -1,14 +1,14 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Message;
+namespace RabbiteventsMod\Events\Tests\Queue\Message;
 
 use Interop\Amqp\Impl\AmqpMessage;
 use Interop\Queue\Destination;
 use Interop\Queue\Exception\DeliveryDelayNotSupportedException;
 use Interop\Queue\Producer;
 use Mockery as m;
-use Ecavalier\Events\Queue\Message\Sender;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Message\Sender;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class SenderTest extends TestCase
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Jobs;
+namespace RabbiteventsMod\Events\Queue\Jobs;
 
 use Generator;
 use Interop\Amqp\AmqpMessage;
-use Ecavalier\Events\Facades\RabbitEvents;
-use Ecavalier\Events\Queue\Manager;
+use RabbiteventsMod\Events\Facades\RabbitEvents;
+use RabbiteventsMod\Events\Queue\Manager;
 use Illuminate\Container\Container;
 
 class Factory

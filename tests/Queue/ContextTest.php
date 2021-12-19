@@ -1,14 +1,14 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue;
+namespace RabbiteventsMod\Events\Tests\Queue;
 
 use Interop\Amqp\AmqpContext;
 use Interop\Queue\Producer;
 use Interop\Queue\Topic;
 use Mockery as m;
-use Ecavalier\Events\Queue\Context;
-use Ecavalier\Events\Queue\Message\Transport;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class ContextTest extends TestCase
 {

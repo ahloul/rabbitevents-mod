@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Queue;
+namespace RabbiteventsMod\Events\Queue;
 
 use Interop\Queue\Topic;
 use Interop\Amqp\AmqpContext;
-use Ecavalier\Events\Queue\Message\Sender;
-use Ecavalier\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Queue\Message\Sender;
+use RabbiteventsMod\Events\Queue\Message\Transport;
 
 /**
  * @mixin \Enqueue\AmqpLib\AmqpContext

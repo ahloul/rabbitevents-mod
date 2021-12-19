@@ -1,17 +1,17 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue;
+namespace RabbiteventsMod\Events\Tests\Queue;
 
 use Illuminate\Container\Container;
-use Ecavalier\Events\Queue\Jobs\Job;
-use Ecavalier\Events\Dispatcher;
-use Ecavalier\Events\Queue\Manager;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Jobs\Job;
+use RabbiteventsMod\Events\Dispatcher;
+use RabbiteventsMod\Events\Queue\Manager;
+use RabbiteventsMod\Events\Tests\TestCase;
 use Interop\Amqp\Impl\AmqpMessage;
-use Ecavalier\Events\Tests\Queue\Stubs\ListenerStubForMiddleware;
-use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithMixOfMiddleware;
-use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithMethodMiddleware;
-use Ecavalier\Events\Tests\Queue\Stubs\ListenerWithAttributeMiddleware;
+use RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerStubForMiddleware;
+use RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerWithMixOfMiddleware;
+use RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerWithMethodMiddleware;
+use RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerWithAttributeMiddleware;
 
 class MiddlewareTest extends TestCase
 {

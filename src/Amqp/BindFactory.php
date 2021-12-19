@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Amqp;
+namespace RabbiteventsMod\Events\Amqp;
 
 use Interop\Amqp\AmqpQueue;
 use Interop\Amqp\AmqpTopic;
 use Interop\Amqp\Impl\AmqpBind;
-use Ecavalier\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Context;
 
 class BindFactory
 {

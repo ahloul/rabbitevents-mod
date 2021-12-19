@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecavalier\Events\Event\Testing;
+namespace RabbiteventsMod\Events\Event\Testing;
 
 use Illuminate\Container\Container;
-use Ecavalier\Events\Event\Publisher;
-use Ecavalier\Events\Event\ShouldPublish;
+use RabbiteventsMod\Events\Event\Publisher;
+use RabbiteventsMod\Events\Event\ShouldPublish;
 
 trait PublishableEventTesting
 {

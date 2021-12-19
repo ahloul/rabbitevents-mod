@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Console;
+namespace RabbiteventsMod\Events\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -56,7 +56,7 @@ class InstallCommand extends Command
                 $appConfig
             )
         );
-        
+
         file_put_contents($this->laravel->path('Providers/RabbitEventsServiceProvider.php'), str_replace(
             "namespace App\Providers;",
             "namespace {$namespace}\Providers;",

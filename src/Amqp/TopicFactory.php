@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Amqp;
+namespace RabbiteventsMod\Events\Amqp;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Interop\Queue\Topic;

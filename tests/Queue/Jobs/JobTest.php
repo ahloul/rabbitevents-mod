@@ -1,15 +1,15 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Jobs;
+namespace RabbiteventsMod\Events\Tests\Queue\Jobs;
 
 use Enqueue\AmqpLib\AmqpConsumer;
 use Illuminate\Container\Container;
 use Interop\Amqp\AmqpMessage;
 use Mockery as m;
-use Ecavalier\Events\Queue\Jobs\Job;
-use Ecavalier\Events\Queue\Manager;
-use Ecavalier\Events\Queue\Message\Transport;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Jobs\Job;
+use RabbiteventsMod\Events\Queue\Manager;
+use RabbiteventsMod\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class JobTest extends TestCase
 {

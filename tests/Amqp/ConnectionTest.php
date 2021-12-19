@@ -1,12 +1,12 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Amqp;
+namespace RabbiteventsMod\Events\Tests\Amqp;
 
 use Enqueue\AmqpTools\DelayStrategy;
 use Interop\Amqp\AmqpConnectionFactory;
-use Ecavalier\Events\Amqp\Connection;
-use Ecavalier\Events\Queue\Context;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Amqp\Connection;
+use RabbiteventsMod\Events\Queue\Context;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class ConnectionTest extends TestCase
 {

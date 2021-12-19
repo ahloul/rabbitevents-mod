@@ -1,9 +1,9 @@
 <?php
 
-namespace Ecavalier\Events\Console\Log;
+namespace RabbiteventsMod\Events\Console\Log;
 
 use Illuminate\Contracts\Foundation\Application;
-use Ecavalier\Events\Queue\Jobs\Job;
+use RabbiteventsMod\Events\Queue\Jobs\Job;
 
 class General extends Writer
 {

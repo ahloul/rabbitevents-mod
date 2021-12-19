@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecavalier\Events\Tests;
+namespace RabbiteventsMod\Events\Tests;
 
 use Illuminate\Support\Arr;
-use Ecavalier\Events\Dispatcher;
-use Ecavalier\Events\Tests\Queue\Stubs\ListenerStub;
+use RabbiteventsMod\Events\Dispatcher;
+use RabbiteventsMod\Events\Tests\Queue\Stubs\ListenerStub;
 
 class DispatcherTest extends TestCase
 {

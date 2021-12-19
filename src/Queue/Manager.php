@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecavalier\Events\Queue;
+namespace RabbiteventsMod\Events\Queue;
 
 use Illuminate\Support\InteractsWithTime;
 use Interop\Amqp\AmqpConsumer;
 use Interop\Amqp\AmqpMessage;
-use Ecavalier\Events\Queue\Message\Transport;
+use RabbiteventsMod\Events\Queue\Message\Transport;
 
 class Manager
 {

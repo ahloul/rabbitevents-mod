@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecavalier\Events\Queue\Jobs;
+namespace RabbiteventsMod\Events\Queue\Jobs;
 
 use Illuminate\Support\Arr;
 use Interop\Amqp\AmqpMessage;
-use Ecavalier\Events\Queue\Manager;
+use RabbiteventsMod\Events\Queue\Manager;
 use Illuminate\Container\Container;
 
 class Job extends \Illuminate\Queue\Jobs\Job implements \Illuminate\Contracts\Queue\Job
@@ -113,7 +113,7 @@ class Job extends \Illuminate\Queue\Jobs\Job implements \Illuminate\Contracts\Qu
     {
         return $this->getName();
     }
-    
+
     /**
      * Get the timestamp indicating when the job should timeout.
      */

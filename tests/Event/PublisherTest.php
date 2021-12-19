@@ -1,17 +1,17 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Event;
+namespace RabbiteventsMod\Events\Tests\Event;
 
 use Enqueue\AmqpLib\AmqpContext;
 use Illuminate\Contracts\Support\Arrayable;
 use Interop\Queue\Topic;
 use Mockery as m;
-use Ecavalier\Events\Event\Publishable;
-use Ecavalier\Events\Event\Publisher;
-use Ecavalier\Events\Event\ShouldPublish;
-use Ecavalier\Events\Queue\Message\Sender;
-use Ecavalier\Events\Queue\Context;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Event\Publishable;
+use RabbiteventsMod\Events\Event\Publisher;
+use RabbiteventsMod\Events\Event\ShouldPublish;
+use RabbiteventsMod\Events\Queue\Message\Sender;
+use RabbiteventsMod\Events\Queue\Context;
+use RabbiteventsMod\Events\Tests\TestCase;
 
 class PublisherTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Tests;
+namespace RabbiteventsMod\Events\Tests;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {

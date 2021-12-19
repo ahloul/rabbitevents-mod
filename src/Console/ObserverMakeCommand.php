@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Console;
+namespace RabbiteventsMod\Events\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\GeneratorCommand;

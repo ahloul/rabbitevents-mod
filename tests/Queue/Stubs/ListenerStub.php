@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Stubs;
+namespace RabbiteventsMod\Events\Tests\Queue\Stubs;
 
 class ListenerStub
 {

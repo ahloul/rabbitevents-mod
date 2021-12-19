@@ -1,17 +1,17 @@
 <?php
 
-namespace Ecavalier\Events;
+namespace RabbiteventsMod\Events;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
-use Ecavalier\Events\Amqp\Connection;
-use Ecavalier\Events\Amqp\TopicFactory;
-use Ecavalier\Events\Console\EventsListCommand;
-use Ecavalier\Events\Console\InstallCommand;
-use Ecavalier\Events\Console\ListenCommand;
-use Ecavalier\Events\Console\ObserverMakeCommand;
-use Ecavalier\Events\Facades\RabbitEvents;
-use Ecavalier\Events\Queue\Context;
+use RabbiteventsMod\Events\Amqp\Connection;
+use RabbiteventsMod\Events\Amqp\TopicFactory;
+use RabbiteventsMod\Events\Console\EventsListCommand;
+use RabbiteventsMod\Events\Console\InstallCommand;
+use RabbiteventsMod\Events\Console\ListenCommand;
+use RabbiteventsMod\Events\Console\ObserverMakeCommand;
+use RabbiteventsMod\Events\Facades\RabbitEvents;
+use RabbiteventsMod\Events\Queue\Context;
 
 class RabbitEventsServiceProvider extends ServiceProvider
 {

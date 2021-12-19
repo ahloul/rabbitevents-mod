@@ -1,22 +1,22 @@
 <?php
 
-namespace Ecavalier\Events\Console;
+namespace RabbiteventsMod\Events\Console;
 
 use Illuminate\Console\Command;
 use Interop\Amqp\AmqpQueue;
-use Ecavalier\Events\Amqp\BindFactory;
-use Ecavalier\Events\Amqp\QueueFactory;
-use Ecavalier\Events\Console\Log;
-use Ecavalier\Events\Queue\Context;
-use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
-use Ecavalier\Events\Queue\Events\JobFailed;
-use Ecavalier\Events\Queue\Events\JobProcessed;
-use Ecavalier\Events\Queue\Events\JobProcessing;
-use Ecavalier\Events\Queue\Jobs\Factory;
-use Ecavalier\Events\Queue\Message\Processor;
-use Ecavalier\Events\Queue\ProcessingOptions;
-use Ecavalier\Events\Queue\Manager;
-use Ecavalier\Events\Queue\Worker;
+use RabbiteventsMod\Events\Amqp\BindFactory;
+use RabbiteventsMod\Events\Amqp\QueueFactory;
+use RabbiteventsMod\Events\Console\Log;
+use RabbiteventsMod\Events\Queue\Context;
+use RabbiteventsMod\Events\Queue\Events\JobExceptionOccurred;
+use RabbiteventsMod\Events\Queue\Events\JobFailed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessing;
+use RabbiteventsMod\Events\Queue\Jobs\Factory;
+use RabbiteventsMod\Events\Queue\Message\Processor;
+use RabbiteventsMod\Events\Queue\ProcessingOptions;
+use RabbiteventsMod\Events\Queue\Manager;
+use RabbiteventsMod\Events\Queue\Worker;
 
 class ListenCommand extends Command
 {
@@ -55,6 +55,7 @@ class ListenCommand extends Command
      */
     public function handle(Context $context, Worker $worker): void
     {
+
         $options = $this->gatherProcessingOptions();
 
         $this->registerLogWriters($options->connectionName);

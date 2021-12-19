@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecavalier\Events\Event;
+namespace RabbiteventsMod\Events\Event;
 
 abstract class AbstractPublishableEvent implements ShouldPublish
 {

@@ -6,7 +6,9 @@
 [![Latest Version](https://img.shields.io/packagist/v/Ecavalier/rabbitevents)](https://packagist.org/packages/Ecavalier/rabbitevents)
 [![License](https://img.shields.io/packagist/l/Ecavalier/rabbitevents)](https://packagist.org/packages/Ecavalier/rabbitevents)
 
-Ecavalier's events provides a simple observer implementation, allowing you to listen for various events that occur in your current and another applications. For example if you need to react to some event published from another API. 
+[This fork form nuwber/rabbitevents](https://github.com/nuwber/rabbitevents)
+
+events provides a simple observer implementation, allowing you to listen for various events that occur in your current and another applications. For example if you need to react to some event published from another API. 
 
 Do not confuse this package with Laravel's broadcast. This package was made to communicate a backend to backend.
  
@@ -124,7 +126,7 @@ Examples 1, 3 and 4 illustrates how to use them.
 The [rabbitevents:listen](#command-listen) command sets number of tries to handle a Job to `1` by default. 
 This means that there will be 2 attempts (first attempt and 1 retry) to handle  your event with delay of `sleep` option (default is 5 seconds). 
 `--tries=0` means that Rabbitevents will attempt to handle an event forever.
-If for some reason event handling shouldn't be retried, throw `\Ecavalier\Events\Exception\FailedException` from a Listener. It will mark an event Job as `failed` without new attempts to handle.
+If for some reason event handling shouldn't be retried, throw `\RabbiteventsMod\Events\Exception\FailedException` from a Listener. It will mark an event Job as `failed` without new attempts to handle.
 
 More examples [here](/examples)
 
@@ -470,9 +472,9 @@ Simply use `PublishableEventTesting` trait that provides assertion methods in cl
 
 namespace App\BroadcastEvents;
 
-use Ecavalier\Events\Event\Publishable;
-use Ecavalier\Events\Event\ShouldPublish;
-use Ecavalier\Events\Event\Testing\PublishableEventTesting;
+use RabbiteventsMod\Events\Event\Publishable;
+use RabbiteventsMod\Events\Event\ShouldPublish;
+use RabbiteventsMod\Events\Event\Testing\PublishableEventTesting;
 
 class Event implements ShouldPublish
 {

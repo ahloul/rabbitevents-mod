@@ -1,21 +1,21 @@
 <?php
 
-namespace Ecavalier\Events\Tests\Queue\Message;
+namespace RabbiteventsMod\Events\Tests\Queue\Message;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Events\Dispatcher as Events;
-use Ecavalier\Events\Queue\Events\JobExceptionOccurred;
-use Ecavalier\Events\Queue\Events\JobFailed;
-use Ecavalier\Events\Queue\Events\JobProcessing;
-use Ecavalier\Events\Queue\Events\JobProcessed;
+use RabbiteventsMod\Events\Queue\Events\JobExceptionOccurred;
+use RabbiteventsMod\Events\Queue\Events\JobFailed;
+use RabbiteventsMod\Events\Queue\Events\JobProcessing;
+use RabbiteventsMod\Events\Queue\Events\JobProcessed;
 use Interop\Amqp\Impl\AmqpMessage;
-use Ecavalier\Events\Queue\Exceptions\FailedException;
-use Ecavalier\Events\Queue\Jobs\Factory;
-use Ecavalier\Events\Queue\Jobs\Job;
-use Ecavalier\Events\Queue\Message\Processor;
-use Ecavalier\Events\Queue\ProcessingOptions;
-use Ecavalier\Events\Tests\TestCase;
+use RabbiteventsMod\Events\Queue\Exceptions\FailedException;
+use RabbiteventsMod\Events\Queue\Jobs\Factory;
+use RabbiteventsMod\Events\Queue\Jobs\Job;
+use RabbiteventsMod\Events\Queue\Message\Processor;
+use RabbiteventsMod\Events\Queue\ProcessingOptions;
+use RabbiteventsMod\Events\Tests\TestCase;
 use Mockery as m;
 
 class ProcessorTest extends TestCase
@@ -174,7 +174,7 @@ class ProcessorTest extends TestCase
         return $options;
 
     }
-    
+
     protected function makeJobsFactory(array $jobs)
     {
         $callback = static function ($jobs) {
