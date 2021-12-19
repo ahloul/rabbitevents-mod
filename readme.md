@@ -347,6 +347,8 @@ Sometimes you may with to publish an event to each change of a model. Observers 
 
 ```bash
 $ php artisan rabbitevents:make:observer UserObserver --model=User
+$ php artisan rabbitevents:make:observer "App\\Modules\\User\\RabbitMqObservers\\UserRObserver" -m "Modules\\User\\Models\\User"
+
 ```
 
 This command will place the new observer in your `App/Observers` directory. If this directory does not exist, Artisan will create it for you. Your fresh observer will look like the following:
