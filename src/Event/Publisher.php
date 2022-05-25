@@ -30,12 +30,8 @@ class Publisher
      */
     public function publish(ShouldPublish $event): void
     {
-        $serviceName="Laravel";
-        if(function_exists('config')){
-            $serviceName=config('rabbitevents.connections.rabbitmq.rabbitevents_service_name');
-        }
         $this->transport()->send(
-            MessageFactory::make( $serviceName.":".$event->publishEventKey(), $event->toPublish())
+            MessageFactory::make($event->publishEventKey(), $event->toPublish())
         );
     }
 
